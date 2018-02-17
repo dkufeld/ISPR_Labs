@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Feb  7 17:37:46 2018
+# Process ID: 4996
+# Current directory: C:/Users/fpga/Desktop/ISPR_Demian/vivadoLab1/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4544 C:\Users\fpga\Desktop\ISPR_Demian\vivadoLab1\lab1\lab1.xpr
+# Log file: C:/Users/fpga/Desktop/ISPR_Demian/vivadoLab1/lab1/vivado.log
+# Journal file: C:/Users/fpga/Desktop/ISPR_Demian/vivadoLab1/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fpga/Desktop/ISPR_Demian/vivadoLab1/lab1/lab1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"namespace eval ::xilinx.com_ip_aximm_1.0 { source -notrace {C:/Xilinx/Vivado/2017.2/data/rsb/busdef/AXIMM/busdef.tcl} }"
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"source -notrace {C:/Xilinx/Vivado/2017.2/data/rsb/busdef/clock_signal/busdef.tcl} "
+    (in namespace eval "::xilinx.com_ip_clock_signal_1.0" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_ip_clock_signal_1.0 { source -notrace {C:/Xilinx/Vivado/2017.2/data/rsb/busdef/clock_signal/busdef.tcl} }"
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project C:/Users/fpga/grupo15/lab4_5_1_prueba1/lab4_5_1_prueba1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 859.176 ; gain = 99.336
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  7 17:38:14 2018...
