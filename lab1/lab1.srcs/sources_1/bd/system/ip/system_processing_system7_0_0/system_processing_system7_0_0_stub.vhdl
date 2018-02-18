@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Wed Feb  7 17:46:16 2018
+-- Date        : Wed Feb  7 17:46:15 2018
 -- Host        : pc-b043a-14 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/fpga/Desktop/ISPR_Demian/vivadoLab1/lab1/lab1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_processing_system7_0_0 -prefix
+--               system_processing_system7_0_0_ system_processing_system7_0_0_stub.vhdl
 -- Design      : system_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
