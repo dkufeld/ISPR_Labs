@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Feb 17 17:23:28 2018
+# Process ID: 23765
+# Current directory: /home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1
+# Command line: vivado -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: /home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/system_wrapper.vdi
+# Journal file: /home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+Command: open_checkpoint system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1084.547 ; gain = 0.000 ; free physical = 967 ; free virtual = 3769
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper_board.xdc]
+Finished Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper_board.xdc]
+Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper_early.xdc]
+Finished Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper_early.xdc]
+Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper.xdc]
+Finished Parsing XDC File [/home/demian/UPM/ISPR/Labs/lab1/lab1.runs/impl_1/.Xil/Vivado-23765-demian-ThinkPad-Edge-E420s/dcp3/system_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.44 . Memory (MB): peak = 1356.512 ; gain = 0.000 ; free physical = 686 ; free virtual = 3491
+Restored from archive | CPU: 0.420000 secs | Memory: 1.370827 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.44 . Memory (MB): peak = 1356.512 ; gain = 0.000 ; free physical = 686 ; free virtual = 3491
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1356.512 ; gain = 271.965 ; free physical = 688 ; free virtual = 3490
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 8 out of 139 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: sws_4bits_tri_i[3:0], and leds_4bits_tri_io[3:0].
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 8 out of 139 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: sws_4bits_tri_i[3:0], and leds_4bits_tri_io[3:0].
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 2 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+11 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 17 17:23:56 2018...
