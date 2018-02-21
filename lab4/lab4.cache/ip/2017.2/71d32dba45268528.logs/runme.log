@@ -1,0 +1,130 @@
+
+*** Running vivado
+    with args -log system_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1180.164 ; gain = 78.996 ; free physical = 116 ; free virtual = 1193
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' (3#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' (4#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' (5#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter' (6#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' (6#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' (8#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' (9#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' (10#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'system_xbar_0' (11#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1300.664 ; gain = 199.496 ; free physical = 244 ; free virtual = 967
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1300.664 ; gain = 199.496 ; free physical = 239 ; free virtual = 964
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+create_clock: Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:07 . Memory (MB): peak = 1574.492 ; gain = 8.000 ; free physical = 110 ; free virtual = 313
+
+*** Running vivado
+    with args -log system_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1180.164 ; gain = 78.996 ; free physical = 147 ; free virtual = 1641
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' (3#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' (4#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' (5#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter' (6#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' (6#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' (8#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' (9#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' (10#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'system_xbar_0' (11#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_xbar_0/synth/system_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1300.664 ; gain = 199.496 ; free physical = 226 ; free virtual = 1455
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1300.664 ; gain = 199.496 ; free physical = 227 ; free virtual = 1456
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+create_clock: Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:05 . Memory (MB): peak = 1574.492 ; gain = 8.000 ; free physical = 109 ; free virtual = 615
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:09 . Memory (MB): peak = 1574.492 ; gain = 0.000 ; free physical = 115 ; free virtual = 547
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:03:07 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 600 ; free virtual = 958
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:03:07 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 599 ; free virtual = 959
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:03:08 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 600 ; free virtual = 961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:03:12 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 549 ; free virtual = 923
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:03:15 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 539 ; free virtual = 931
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:03:34 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 225 ; free virtual = 624
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:03:38 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 86 ; free virtual = 473
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:03:41 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 103 ; free virtual = 458
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 112 ; free virtual = 452
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 112 ; free virtual = 450
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 114 ; free virtual = 450
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 114 ; free virtual = 450
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 114 ; free virtual = 450
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:03:42 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 114 ; free virtual = 450
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    10|
+|3     |LUT3 |    38|
+|4     |LUT4 |    53|
+|5     |LUT5 |    53|
+|6     |LUT6 |    23|
+|7     |FDRE |   131|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:03:43 . Memory (MB): peak = 1574.492 ; gain = 473.324 ; free physical = 114 ; free virtual = 448
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:04:05 . Memory (MB): peak = 1574.500 ; gain = 485.918 ; free physical = 153 ; free virtual = 458

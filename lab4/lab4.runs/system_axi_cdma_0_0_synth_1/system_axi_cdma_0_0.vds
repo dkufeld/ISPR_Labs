@@ -1,0 +1,230 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Feb 21 12:48:16 2018
+# Process ID: 17171
+# Current directory: /home/demian/UPM/ISPR/Labs/lab4/lab4.runs/system_axi_cdma_0_0_synth_1
+# Command line: vivado -log system_axi_cdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_cdma_0_0.tcl
+# Log file: /home/demian/UPM/ISPR/Labs/lab4/lab4.runs/system_axi_cdma_0_0_synth_1/system_axi_cdma_0_0.vds
+# Journal file: /home/demian/UPM/ISPR/Labs/lab4/lab4.runs/system_axi_cdma_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_axi_cdma_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1175.145 ; gain = 75.996 ; free physical = 150 ; free virtual = 1644
+INFO: [Synth 8-638] synthesizing module 'system_axi_cdma_0_0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_cdma_0_0/synth/system_axi_cdma_0_0.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:15312]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_sg_wrap' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:13095]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reset' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen' (1#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized0' (1#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized1' (1#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reset' (2#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reg_module' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:5308]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_lite_if' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_lite_if' (3#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_register' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:3808]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_register' (4#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:3808]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reg_module' (5#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:5308]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_cntlr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:7695]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_cntlr' (6#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:7695]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_sg_cntlr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:10224]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_sg_cntlr' (7#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:10224]
+INFO: [Synth 8-638] synthesizing module 'axi_sg' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:28736]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_mngr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:20303]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_sm' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:18543]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_sm' (8#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:18543]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_pntr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:19527]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_pntr' (9#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:19527]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_cmdsts_if' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:19938]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_cmdsts_if' (10#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:19938]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_mngr' (11#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:20303]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_q_mngr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:22897]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_queue' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:21321]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_queue' (12#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:21321]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_q_mngr' (13#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:22897]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_mngr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:25077]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_sm' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:24165]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_sm' (14#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:24165]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_cmdsts_if' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:23854]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_cmdsts_if' (15#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:23854]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_mngr' (16#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:25077]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_q_mngr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:27298]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_queue' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:25428]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_queue' (17#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:25428]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_q_mngr' (18#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:27298]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_intrpt' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:27902]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_intrpt' (19#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:27902]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_datamover' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:17737]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_mm2s_basic_wrap' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:15576]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_reset' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:303]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_reset' (20#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_cmd_status' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:2683]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo' (21#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized0' (21#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_cmd_status' (22#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:2683]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_rd_status_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:7089]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_rd_status_cntl' (23#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:7089]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_scc' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:7562]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_scc' (24#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:7562]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_addr_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:4548]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_addr_cntl' (25#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:4548]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_rddata_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:5476]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_rddata_cntl' (26#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:5476]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_mm2s_basic_wrap' (27#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:15576]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_s2mm_basic_wrap' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:16506]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_wr_status_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:13563]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (28#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (29#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (30#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized1' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized2' (31#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:1883]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_wr_status_cntl' (32#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:13563]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_scc_wr' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:9822]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_scc_wr' (33#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:9822]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_addr_cntl__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:4548]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_addr_cntl__parameterized0' (33#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:4548]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_wrdata_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:11526]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_wrdata_cntl' (34#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:11526]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_s2mm_basic_wrap' (35#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:16506]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_datamover' (36#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:17737]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg' (37#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/ddc9/hdl/axi_sg_v4_1_rfs.vhd:28736]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (38#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (39#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (39#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (40#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (41#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (42#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (42#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (43#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (43#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (43#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (43#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (43#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (44#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (45#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (45#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (45#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (45#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (45#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (46#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (47#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (48#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (49#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (50#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (51#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (52#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (53#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_sg_wrap' (54#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:13095]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (55#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ipshared/476e/hdl/axi_cdma_v4_1_vh_rfs.vhd:15312]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_cdma_0_0' (56#1) [/home/demian/UPM/ISPR/Labs/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_cdma_0_0/synth/system_axi_cdma_0_0.vhd:143]
+Finished RTL Elaboration : Time (s): cpu = 00:06:45 ; elapsed = 00:07:58 . Memory (MB): peak = 1345.645 ; gain = 246.496 ; free physical = 1671 ; free virtual = 2354
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:46 ; elapsed = 00:08:08 . Memory (MB): peak = 1345.645 ; gain = 246.496 ; free physical = 1679 ; free virtual = 2380
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:01 . Memory (MB): peak = 1609.473 ; gain = 1.000 ; free physical = 1199 ; free virtual = 2060
+Finished Constraint Validation : Time (s): cpu = 00:07:06 ; elapsed = 00:09:41 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 1241 ; free virtual = 2236
+Finished Loading Part and Timing Information : Time (s): cpu = 00:07:06 ; elapsed = 00:09:41 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 1241 ; free virtual = 2237
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:07:06 ; elapsed = 00:09:42 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 1240 ; free virtual = 2237
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:11 ; elapsed = 00:09:48 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 1221 ; free virtual = 2230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:22 ; elapsed = 00:10:01 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 1177 ; free virtual = 2207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:36 ; elapsed = 00:10:15 . Memory (MB): peak = 1609.473 ; gain = 510.324 ; free physical = 992 ; free virtual = 2083
+Finished Timing Optimization : Time (s): cpu = 00:07:42 ; elapsed = 00:10:22 . Memory (MB): peak = 1666.668 ; gain = 567.520 ; free physical = 866 ; free virtual = 1992
+Finished Technology Mapping : Time (s): cpu = 00:07:45 ; elapsed = 00:10:25 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 827 ; free virtual = 1980
+Finished IO Insertion : Time (s): cpu = 00:07:46 ; elapsed = 00:10:26 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 821 ; free virtual = 1981
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:46 ; elapsed = 00:10:26 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 821 ; free virtual = 1981
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:46 ; elapsed = 00:10:27 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 770 ; free virtual = 1932
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:46 ; elapsed = 00:10:27 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 770 ; free virtual = 1932
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:47 ; elapsed = 00:10:27 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 770 ; free virtual = 1932
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:47 ; elapsed = 00:10:27 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 770 ; free virtual = 1932
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    33|
+|2     |LUT1   |    73|
+|3     |LUT2   |   184|
+|4     |LUT3   |   348|
+|5     |LUT4   |   261|
+|6     |LUT5   |   224|
+|7     |LUT6   |   451|
+|8     |MUXF7  |    10|
+|9     |SRL16E |   146|
+|10    |FDRE   |  2155|
+|11    |FDSE   |    63|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:47 ; elapsed = 00:10:27 . Memory (MB): peak = 1682.684 ; gain = 583.535 ; free physical = 770 ; free virtual = 1932
+synth_design: Time (s): cpu = 00:07:50 ; elapsed = 00:10:34 . Memory (MB): peak = 1682.691 ; gain = 596.129 ; free physical = 833 ; free virtual = 2022

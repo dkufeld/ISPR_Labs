@@ -1,0 +1,173 @@
+/*
+ * toogle.c
+ *
+ */
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xgpiops.h"
+#include "fsm.h"
+
+static XGpioPs psGpioInstancePtr;
+
+enum fsm_led_state {
+  LED_ON,
+  LED_OFF,
+};
+
+enum fsm_but_state {
+    NOT_PRESSED,
+    PRESSED,
+};
+
+typedef struct {
+    fsm_t fsm;
+    XGpioPs* gpio;
+    int pin;
+} fsm_gpiops_t;
+
+typedef struct {
+    fsm_gpiops_t fsm_gpio;
+    int count;
+    int pressed;
+} fsm_button_t;
+
+typedef struct {
+    fsm_gpiops_t fsm_gpio;
+    int* pressed;
+} fsm_led_t;
+
+int but_is_off (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	return !XGpioPs_ReadPin(fsm_but->fsm_gpio.gpio,fsm_but->fsm_gpio.pin);
+    //return !button value(using XGpioPs_ReadPin with instance and pin)
+}
+
+int but_is_on (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	return XGpioPs_ReadPin(fsm_but->fsm_gpio.gpio,fsm_but->fsm_gpio.pin);
+    //return button value(using XGpioPs_ReadPin with instance and pin)
+}
+
+int but_is_stable (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	return (fsm_but->count > 5);
+    //return 1 if count > 5
+}
+
+void but_reset_count (fsm_t* this) {
+    fsm_button_t* fsm_but = (fsm_button_t*)this;
+    fsm_but->count = 0;
+    //count to 0
+}
+
+void but_inc_count (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	fsm_but->count++;
+    //count ++
+}
+
+void but_stable_on (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	fsm_but->count = 0;
+	fsm_but->pressed = 1;
+    //count to 0
+    //pressed to 1
+}
+
+void but_stable_off (fsm_t* this) {
+	fsm_button_t* fsm_but = (fsm_button_t*)this;
+	fsm_but->count = 0;
+    //count to 0
+}
+
+int led_should_toggle (fsm_t* this) {
+    fsm_led_t* fsm_led = (fsm_led_t*)this;
+    return *(fsm_led->pressed);
+}
+
+void led_on (fsm_t* this) {
+    fsm_led_t* fsm_led = (fsm_led_t*)this;
+    *(fsm_led->pressed) = 0;
+    XGpioPs_WritePin(fsm_led->fsm_gpio.gpio,fsm_led->fsm_gpio.pin,1);
+    //write 1 to pin with XGpioPs_WritePin with instance and pin
+}
+void led_off (fsm_t* this) {
+    fsm_led_t* fsm_led = (fsm_led_t*)this;
+    *(fsm_led->pressed) = 0;
+    XGpioPs_WritePin(fsm_led->fsm_gpio.gpio,fsm_led->fsm_gpio.pin,0);
+    //write 0 to pin with XGpioPs_WritePin with instance and pin
+}
+
+int main (){
+
+  int i;
+  XGpioPs_Config*GpioConfigPtr;
+  int xStatus;
+  u32 uPinDirectionEMIO = 0x0; //wofür??
+  u32 uPinDirection = 0x1; //wofür??
+  // Finite State Machine: Mealy. Transition array
+  // {SrcState, Trigger, DstState, Action }
+  fsm_trans_t but_tt[] = {
+    {NOT_PRESSED, but_is_stable , PRESSED, but_stable_on},
+    {NOT_PRESSED, but_is_on , NOT_PRESSED, but_inc_count},
+    {NOT_PRESSED, but_is_off, NOT_PRESSED, but_reset_count},
+    {PRESSED, but_is_stable, NOT_PRESSED, but_stable_off},
+    {PRESSED, but_is_on, PRESSED, but_reset_count},
+    {PRESSED, but_is_off, PRESSED, but_inc_count},
+    {-1, NULL, -1, NULL },
+  };
+
+  fsm_trans_t led_tt[] = {
+    { LED_OFF, led_should_toggle, LED_ON, led_on },
+    { LED_ON,  led_should_toggle , LED_OFF, led_off},
+    {-1, NULL, -1, NULL },
+  };
+
+  fsm_button_t fsm_but;
+  fsm_led_t fsm_led;
+  
+  fsm_init(&fsm_but, NOT_PRESSED, but_tt);
+  fsm_init(&fsm_led, LED_OFF, led_tt);
+    
+  //Initialize GPIOs: direction, ...
+  // PS GPIO Intialization
+  GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+  if(GpioConfigPtr == NULL)
+    return XST_FAILURE;
+  xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr,
+      GpioConfigPtr,
+      GpioConfigPtr->BaseAddr);
+  if(XST_SUCCESS != xStatus)
+    print(" PS GPIO INIT FAILED \n\r");
+  
+  fsm_led.fsm_gpio.gpio = &psGpioInstancePtr;
+  fsm_led.fsm_gpio.pin = 7;
+  fsm_led.pressed = &(fsm_but.pressed);
+
+  fsm_but.fsm_gpio.gpio = &psGpioInstancePtr;
+  fsm_but.fsm_gpio.pin = 54;
+
+
+  //PS GPIO pin setting to Output
+  XGpioPs_SetDirectionPin(&psGpioInstancePtr, fsm_led.fsm_gpio.pin,uPinDirection);
+  XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, fsm_led.fsm_gpio.pin,1);
+  //EMIO PIN Setting to Input port
+  XGpioPs_SetDirectionPin(&psGpioInstancePtr,
+		  fsm_but.fsm_gpio.pin,uPinDirectionEMIO);
+  XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, fsm_but.fsm_gpio.pin,0);
+
+  //Reset actions
+  led_off(&fsm_led);
+  but_stable_off(&fsm_but);
+
+  XGpioPs_WritePin(fsm_led.fsm_gpio.gpio,fsm_led.fsm_gpio.pin,0xFF);
+    
+  while (1) {
+    fsm_fire (&fsm_but);
+    fsm_fire (&fsm_led);
+    for (i=0; i<99999; i++); // delay loop => should be done with timer
+  }
+}
+
+
+
